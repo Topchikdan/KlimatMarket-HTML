@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Daikin FTXF20B — КлиматМаркет</title>
+        <link rel="stylesheet" href="style.css"> 
+        <link rel="stylesheet" href="header.css">
+        <link rel="stylesheet" href="product.css">
+        <link rel="stylesheet" href="media.css">
+    </head>
+    <body>
+
+        <header class="header">
+            <a class="header__logo" href="#">Климат<span>Маркет</span></a>
+            <nav>
+                <ul class="header__menu">
+                    <li><a class="header__item" href="#">Каталог</a></li>
+                    <li><a class="header__item" href="#">Услуги</a></li>
+                    <li><a class="header__item" href="#">Контакты</a></li>
+                    <li><a class="header__item" href="#">FAQ</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="product">
+
+            <div class="images">
+                <div class="big-image">
+                    <img class="cond-big" id="mainImage" src="product.png" alt="Сплит-система Daikin FTXF20B/RXF20B">
+                </div>
+                <div class="gallery">
+                    <div class="small-image active" data-src="product.png">
+                        <img src="product.png" alt="Вид спереди">
+                    </div>
+                    <div class="small-image" data-src="product.png">
+                        <img src="product.png" alt="Вид сбоку" style="filter: hue-rotate(20deg) brightness(0.9)">
+                    </div>
+                    <div class="small-image" data-src="product.png">
+                        <img src="product.png" alt="Пульт" style="filter: saturate(0.5)">
+                    </div>
+                    <div class="small-image" data-src="product.png">
+                        <img src="product.png" alt="Детали" style="filter: brightness(0.8) contrast(1.1)">
+                    </div>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="product__wrap">
+                    <span class="product__badge">В наличии</span>
+                    <h2 class="product__title">Сплит-система Daikin FTXF20B/RXF20B</h2>
+                    <div class="product__rating">
+                        <span class="product__stars">★★★★★</span>
+                        <span class="product__reviews">4.9 · 128 отзывов</span>
+                    </div>
+
+                    <div class="product__price-row">
+                        <p class="product__price">55 000 ₽</p>
+                        <span class="product__price-old">68 000 ₽</span>
+                        <span class="product__price-save">−19%</span>
+                    </div>
+
+                    <div class="product__divider"></div>
+
+                    <p class="product__color-label">Цвет: <span class="product__color-name" id="colorName">Чёрный</span></p>
+                    <div class="product__colors">
+                        <div class="product__block black selected" data-color="Чёрный" title="Чёрный"></div>
+                        <div class="product__block white" data-color="Белый" title="Белый"></div>
+                        <div class="product__block green" data-color="Зелёный" title="Зелёный"></div>
+                        <div class="product__block blue" data-color="Синий" title="Синий"></div>
+                    </div>
+
+                    <div class="product__divider"></div>
+
+                    <p class="product__description">Коротко о товаре:</p>
+                    <ul class="product__items">
+                        <li class="product__item">Инверторный компрессор — тихая работа от 19 дБ</li>
+                        <li class="product__item">Управление через Wi-Fi и приложение Daikin</li>
+                        <li class="product__item">Автозапуск после отключения электричества</li>
+                        <li class="product__item">Режим охлаждения до −10 °C на улице</li>
+                    </ul>
+
+                    <div class="product__actions">
+                        <button class="product__button" id="addToCart">Добавить в корзину</button>
+                        <button class="product__wishlist" id="wishlistBtn" aria-label="В избранное">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ef5350" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Toast -->
+        <div class="toast" id="toast"></div>
+
+        <script src="index.js"></script> 
+    </body>
+</html>
